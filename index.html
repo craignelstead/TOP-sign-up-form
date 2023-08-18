@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroid Alert</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="maincontainer">
+        <div id="imagebar">
+            <img src="./images/asteroid.jpg" alt="Asteroid in a starry sky">
+            <div id="logobar"></div>
+            <p id="photocredit">Photo by 
+                <a href="https://unsplash.com/@chrishenryphoto">Chris Henry</a> 
+                on 
+                <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+        <div id="formside">
+            <div id="blurb">
+                <p>
+                    Test lorem ipsum crap blah
+                    asdfasd 
+                </p>
+            </div>
+            <div id="formcontainer">
+                <form action="" method="post">
+                    <legend>Find out before it's too late!</legend>
+
+                    <input name ="firstname" id="firstname" type="text" 
+                        label="*FIRST NAME" required placeholder="ex: Giuseppe">
+                    <input name="lastname" id="lastname" type="text" 
+                        label="*LAST NAME" required placeholder="ex: Piazzi">
+
+                    <input name="email" id="email" type="email" 
+                        label="*EMAIL" required placeholder="apophis@closecall.com">
+                    <input name="phone" id="phone" type="text" label="*PHONE NUMBER" 
+                        required placeholder="413-299-9942">
+
+                    <input name="password" id="password" type="password" 
+                        label="*PASSWORD" required class="pws">
+                    <input name="" id="passwordconfirm" type="password" 
+                        label="*CONFIRM PASSWORD" required>
+
+                    <div id="account">
+                        <button name="submit" type="submit" id="submit">
+                            Create Account
+                        </button>
+                        <p>Already have an account? <span><a>Log in</a></span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

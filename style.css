@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    justify-content: center;
+    background-color:rgb(32,32,32);
+}
+
+#maincontainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+}
+
+#imagebar {
+    width: 33%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+#logobar, #photocredit {
+    position: absolute;
+    z-index: 99;
+}
+
+#logobar {
+    height: 100px;
+    background-color: lightgray;
+    opacity: 0.5;
+}
+
+#photocredit {
+    color: white;
+    font-size: small;
+}
+
+#formside {
+    width: 67%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#formside, #blurb, #formcontainer {
+    background-color: rgb(245,245,245);
+}
+
+#blurb {
+    height: 33%;
+}
+
+#formcontainer {
+    height: 67%;
+}
