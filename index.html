@@ -9,8 +9,11 @@
 <body>
     <div id="maincontainer">
         <div id="imagebar">
-            <img src="./images/asteroid.jpg" alt="Asteroid in a starry sky">
-            <div id="logobar"></div>
+            <img src="./images/asteroid.jpg" alt="Asteroid in a starry sky"
+                id="sidebarimage">
+            <div id="logobar">
+                <img src="./images/astlogo.png" alt="Asteroid Logo" id="logo">
+            </div>
             <p id="photocredit">Photo by 
                 <a href="https://unsplash.com/@chrishenryphoto">Chris Henry</a> 
                 on 
@@ -19,34 +22,50 @@
         <div id="formside">
             <div id="blurb">
                 <p>
-                    Test lorem ipsum crap blah
-                    asdfasd 
+                    Given enough time, an asteroid will inevitabely destroy our
+                    planet. Thankfully, if you sign up you can receive a 
+                    notification up to 30 minutes before humanity's extinction.
+                </p>
+                <p>
+                    This is the alert you have been <em>dreaming</em> of, you 
+                    just didn't know it.
                 </p>
             </div>
             <div id="formcontainer">
                 <form action="" method="post">
                     <legend>Find out before it's too late!</legend>
 
+                    <label for="firstname">FIRST NAME</label>
                     <input name ="firstname" id="firstname" type="text" 
-                        label="*FIRST NAME" required placeholder="ex: Giuseppe">
-                    <input name="lastname" id="lastname" type="text" 
-                        label="*LAST NAME" required placeholder="ex: Piazzi">
+                        required placeholder="ex: Giuseppe">
 
+                    <label for="lastname">LAST NAME</label>
+                    <input name="lastname" id="lastname" type="text" 
+                        required placeholder="ex: Piazzi">
+
+                    <label for="email">EMAIL</label>
                     <input name="email" id="email" type="email" 
-                        label="*EMAIL" required placeholder="apophis@closecall.com">
-                    <input name="phone" id="phone" type="text" label="*PHONE NUMBER" 
+                        required placeholder="apophis@closecall.com">
+
+                    <label for="phone">PHONE</label>    
+                    <input name="phone" id="phone" type="text"
                         required placeholder="413-299-9942">
 
+                    <label for="password">PASSWORD</label>
                     <input name="password" id="password" type="password" 
-                        label="*PASSWORD" required class="pws">
-                    <input name="" id="passwordconfirm" type="password" 
-                        label="*CONFIRM PASSWORD" required>
+                        required class="pws">
+
+                    <label for="passwordconfirm">CONFIRM PASSWORD</label>
+                    <input name="passwordconfirm" id="passwordconfirm" 
+                        type="password" required>
 
                     <div id="account">
                         <button name="submit" type="submit" id="submit">
                             Create Account
                         </button>
-                        <p>Already have an account? <span><a>Log in</a></span></p>
+                        <p>Already have an account? 
+                            <span><a>Log in</a></span>
+                        </p>
                     </div>
                 </form>
             </div>

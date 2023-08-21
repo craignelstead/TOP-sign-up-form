@@ -7,21 +7,24 @@ body {
     max-height: 100vh;
     justify-content: center;
     background-color:rgb(32,32,32);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #maincontainer {
     display: flex;
     flex-direction: row;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 #imagebar {
     width: 33%;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-img {
+#sidebarimage {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -35,14 +38,28 @@ img {
 }
 
 #logobar {
-    height: 100px;
-    background-color: lightgray;
-    opacity: 0.5;
+    background-color: rgba(211,211,211,0.3);
+    top: 10%;
+    height: 150px;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    opacity: 1.5;
+    height: 100%;
+    filter: brightness(0) invert(1);
 }
 
 #photocredit {
     color: white;
     font-size: small;
+    bottom: 0;
+}
+
+#photocredit a {
+    color: white;
 }
 
 #formside {
@@ -50,16 +67,46 @@ img {
     height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-#formside, #blurb, #formcontainer {
-    background-color: rgb(245,245,245);
+    color: lightgray;
 }
 
 #blurb {
     height: 33%;
+    margin: 10%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: ;
 }
 
 #formcontainer {
     height: 67%;
+    margin: 10%;
+    font-size: 1.1rem;
+}
+
+/* Formside background animation: */
+
+#formside {
+    background: linear-gradient(178deg, #59382a, #2b2c29);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 22s ease infinite;
+    -moz-animation: AnimationName 22s ease infinite;
+    animation: AnimationName 22s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
 }
