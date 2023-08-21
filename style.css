@@ -123,6 +123,11 @@ input {
 input::placeholder {
     opacity: 0.5;
 }
+
+input:focus-within {
+    border-color: blue;
+    box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.36);
+}
   
 input:valid {
     border-color: green;
