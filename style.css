@@ -44,12 +44,22 @@ body {
     width: 33%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #logo {
     opacity: 1.5;
-    height: 100%;
+    max-height: 60%;
     filter: brightness(0) invert(1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#logobar h1 {
+    color: white;
+    letter-spacing: -5px;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
 }
 
 #photocredit {
@@ -67,7 +77,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    color: lightgray;
+    background-color: rgb(248, 248, 248);
 }
 
 #blurb {
@@ -75,38 +85,62 @@ body {
     margin: 10%;
     font-size: 1.5rem;
     font-weight: bold;
-    background-color: ;
 }
 
 #formcontainer {
     height: 67%;
     margin: 10%;
-    font-size: 1.1rem;
 }
 
-/* Formside background animation: */
-
-#formside {
-    background: linear-gradient(178deg, #59382a, #2b2c29);
-    background-size: 400% 400%;
-
-    -webkit-animation: AnimationName 22s ease infinite;
-    -moz-animation: AnimationName 22s ease infinite;
-    animation: AnimationName 22s ease infinite;
+#legandinput {
+    background-color: white;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+    width: 100%;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+#inputcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
 }
-@-moz-keyframes AnimationName {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+
+legend {
+    font-size: 1.5rem;
 }
-@keyframes AnimationName {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+
+.forminput {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input {
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+  
+input:valid {
+    border-color: green;
+}
+
+#account {
+    margin-top: 50px;
+    font-size: 1.3rem;
+}
+
+#submit {
+    font-size: 1.3rem;
+    padding: 8px;
+    background-color: #59382a;
+    color: white;
+    border-radius: 10px;
+}
+
+#account a {
+    text-decoration: underline;
 }
