@@ -130,7 +130,8 @@ input::placeholder {
 }
 
 input:focus-within {
-
+    border: 2px solid blue;
+    outline: transparent;
     box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.36);
 }
   
@@ -150,17 +151,18 @@ input:valid {
 #submit {
     font-size: 1.4rem;
     padding: 8px;
-    background-color: #59382a;
-    color: white;
     border-radius: 10px;
     padding: 15px 40px;
-    transition-duration: 0.5s;
-}
-
-#submit:hover {
+    transition-duration: 0.3s;
+    font-weight: bold;
     background-color: white;
     border: 2px solid #59382a;
     color: #59382a;
+}
+
+#submit:hover {
+    background-color: #59382a;
+    color: white;
 }
 
 #account a {
