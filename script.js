@@ -13,7 +13,10 @@ function listenForPWconfirm() {
     password.addEventListener('input', checkIfMatch);
 
     const phoneNum = document.getElementById("phone");
-    phoneNum.addEventListener('input', phoneHyphen);
+    phoneNum.addEventListener('keyup', (e) => {
+        if (e.key == 'Delete' || e.key == 'Backspace') return;
+        else phoneHyphen();
+    });
 }
 
 //Checks to see if passwords match
@@ -58,13 +61,15 @@ function passFail(pass1, pass2) {
 function phoneHyphen() {
     const phoneNum = document.getElementById("phone");
 
+    //Split phone number into array
     let phoneArray = phoneNum.value.split('');
     let phoneLn = phoneNum.value.length;
 
+    //If 3 digits have been entered or if 6 digits plus a hyphen
+    //have been entered, add a hyphen to the end of the array
     if (phoneLn === 3 || phoneLn === 7) phoneArray.push('-');
 
+    //Get rid of the commas and change the input value
     let newPhone = phoneArray.join().replaceAll(',','');
-    console.log(newPhone);
-
     phoneNum.value = newPhone;
 }
