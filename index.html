@@ -37,52 +37,56 @@
             </div>
             <div id="formcontainer">
                 <form action="" method="post">
-                    <div id="legandinput">
-                        <legend>Be the first to know!</legend>
-                        <div id="inputcontainer">
-                            <div class="forminput">
-                                <label for="firstname">FIRST NAME</label>
-                                <input name ="firstname" id="firstname" type="text" 
-                                    required placeholder="Giuseppe"
-                                    pattern="[a-zA-Z]+">
-                            </div>
-                            <div class="forminput">
-                                <label for="lastname">LAST NAME</label>
-                                <input name="lastname" id="lastname" type="text" 
-                                    required placeholder="Piazzi"
-                                    pattern="[a-zA-Z]+">
-                            </div>
-                            <div class="forminput">
-                                <label for="email">EMAIL</label>
-                                <input name="email" id="email" type="email" 
-                                    required placeholder="apophis@closecall.com">
-                            </div>
-                            <div class="forminput">
-                                <label for="phone">PHONE</label>    
-                                <input name="phone" id="phone" type="text"
-                                    required placeholder="413-299-9942"
-                                    pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-                            </div>
-                            <div class="forminput">
-                                <label for="password">PASSWORD</label>
-                                <input name="password" id="password" type="password" 
-                                    required class="pws"
-                                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
-                            </div>
-                            <div class="forminput">
-                                <label for="passwordconfirm">CONFIRM PASSWORD</label>
-                                <input name="passwordconfirm" id="passwordconfirm" 
-                                    type="password" required>
+                    <div id="mainformcontent">
+                        <div id="legandinput">
+                            <legend>Be the first to know!</legend>
+                            <div id="inputcontainer">
+                                <div class="forminput">
+                                    <label for="firstname">FIRST NAME</label>
+                                    <input name ="firstname" id="firstname" type="text" 
+                                        required placeholder="Giuseppe"
+                                        pattern="[a-zA-Z]+">
+                                </div>
+                                <div class="forminput">
+                                    <label for="lastname">LAST NAME</label>
+                                    <input name="lastname" id="lastname" type="text" 
+                                        required placeholder="Piazzi"
+                                        pattern="[a-zA-Z]+">
+                                </div>
+                                <div class="forminput">
+                                    <label for="email">EMAIL</label>
+                                    <input name="email" id="email" type="email" 
+                                        required placeholder="apophis@closecall.com">
+                                </div>
+                                <div class="forminput">
+                                    <label for="phone">PHONE</label>    
+                                    <input name="phone" id="phone" type="text"
+                                        required placeholder="413-299-9942"
+                                        pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                                </div>
+                                <div class="forminput">
+                                    <label for="password">PASSWORD</label>
+                                    <input name="password" id="password" type="password" 
+                                        required class="pws"
+                                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                                </div>
+                                <div class="forminput">
+                                    <label for="passwordconfirm">CONFIRM PASSWORD</label>
+                                    <input name="passwordconfirm" id="passwordconfirm" 
+                                        type="password" required>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div id="account">
-                        <button name="submit" type="submit" id="submit">
-                            Create Account
-                        </button>
-                        <p>Already have an account? 
-                            <span><a>Log in</a></span>
-                        </p>
+                        <div id="accountcontent">
+                            <button name="submit" type="submit" id="submit">
+                                Create Account
+                            </button>
+                            <p>Already have an account? 
+                                <span><a>Log in</a></span>
+                            </p>
+                        </div>
                     </div>
                 </form>
             </div>
